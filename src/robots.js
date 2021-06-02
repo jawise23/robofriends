@@ -6,7 +6,7 @@ export const robots = [
     email: 'jarrod.anderson@adm.com'
   },
   {
-    id: 2,
+    id: 59,
     name: 'Angela Lane',
     username: 'angela',
     email: 'angela.lane@adm.com'
@@ -18,10 +18,10 @@ export const robots = [
     email: 'emergingtechnology@adm.com'
   },
   {
-    id: 4,
-    name: 'Patricia Lebsack',
-    username: 'Karianne',
-    email: 'Julianne.OConner@kory.org'
+    id: 387,
+    name: 'Bishwas Ghimire',
+    username: 'bishwas',
+    email: 'bishwas.ghimire@adm.com'
   },
   {
     id: 5,
