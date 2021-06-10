@@ -33,6 +33,7 @@ function App() {
 		<div className="tc">
 			<h1 className="f1">EMERGING TECHNOLOGY</h1>
 			<button onClick={() => setCount(count + 1)}>Click Me</button>
+			<h1> { count } </h1>
 			<SearchBox searchChange={onSearchChange} />
 			<Scroll>
 				<ErrorBoundry>
