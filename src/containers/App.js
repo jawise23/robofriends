@@ -11,14 +11,13 @@ function App() {
 	const [searchfield, setSearchfield] = useState("");
 	const [count, setCount] = useState(0);
 
-	useEffect(() => {
-		fetch("https://jsonplaceholder.typicode.com/users")
-			.then((response) => response.json())
-			.then((users) => {
-				setRobots(users);
-			});
-			console.log(count)
-	}, [count]);
+	async function fetchUsers() {
+		const resp = await fetch("https://jsonplaceholder.typicode.com/users");
+		const data = await resp.json();
+		return data;
+	}
+
+	useEffect(() => {fetchUsers().then(users => {setRobots(users)})}, [count]);
 
 	const onSearchChange = (event) => {
 		setSearchfield(event.target.value);
